@@ -12,8 +12,7 @@ log = "0.4.8"
 futures = "0.3.26"
 clap = { version = "4.1.6", features = ["derive", "env"] }
 tokio = { version = "1", features = ["rt", "rt-multi-thread", "macros"] }
+tracing-subscriber = "0.3.18"
+open = "5.3.0"
+matrix-sdk = { version = "0.7.1", default-features = false, features = ["anyhow", "rustls-tls", "sso-login"] }
 
-[dependencies.matrix-sdk]
-git = "https://github.com/matrix-org/matrix-rust-sdk"
-ref = "e162c99"
-features = ["anyhow", "sso-login"]
